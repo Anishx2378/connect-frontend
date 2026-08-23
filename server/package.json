@@ -1,0 +1,36 @@
+{
+  "name": "coderaxo-connect-server",
+  "version": "1.0.0",
+  "description": "Backend API for Coderaxo Connect internal communication platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "db:migrate": "npx prisma migrate dev",
+    "db:seed": "npx prisma db seed",
+    "db:reset": "npx prisma migrate reset",
+    "db:studio": "npx prisma studio"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "keywords": [],
+  "author": "Coderaxo",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.11",
+    "open-graph-scraper": "^6.11.0",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0"
+  }
+}
